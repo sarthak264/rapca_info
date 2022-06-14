@@ -1,0 +1,22 @@
+.ty-heading {
+  margin-top: 150px;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 43px;
+
+  text-align: center;
+  letter-spacing: 0.625px;
+
+  color: #6e31f9;
+}
+.ty-box {
+  background: #ffffff;
+  border: 1px solid #6e31f9;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 25px rgba(110, 49, 249, 0.1);
+  border-radius: 13px;
+  padding: 30px;
+  max-width: 700px;
+  width: 80%;
+  margin: 98px auto;
+}

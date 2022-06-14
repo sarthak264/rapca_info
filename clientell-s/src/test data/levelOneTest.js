@@ -1,0 +1,86 @@
+module.exports = [
+    {
+        name: "Ray Boccino",
+        designation: "VP, US",
+        target: 600000,
+        percentGoalData: {
+            percent: 23.33,
+            booked: 440000
+        }, pipeline: {
+            net: 520000,
+            profit: "110K"
+        },
+        pipelineGap: 20,
+        accounts: 20,
+        forecast: 577366,
+        bestcase: 550000,
+        riskscore: 29,
+        opporscore: 71,
+        id: 0,
+        relatedEmployees: [1, 2],
+        level: 1
+    },
+    {
+        name: "Patrick McReary",
+        designation: "VP, Asia",
+        target: 440000,
+        percentGoalData: {
+            percent: 70.27,
+            booked: 310274
+        }, pipeline: {
+            net: 280000,
+            profit: "60k"
+        },
+        pipelineGap: 30,
+        accounts: 12,
+        forecast: 300029,
+        bestcase: 280000,
+        riskscore: 46,
+        opporscore: 54,
+        id: 2,
+        relatedEmployees: [6, 7],
+        level: 1
+    },
+    {
+        name: "Jimmy Pegorino",
+        designation: "VP, Australia",
+        target: 400000,
+        percentGoalData: {
+            percent: 55.05,
+            booked: 220274
+        }, pipeline: {
+            net: 280000,
+            profit: "40k"
+        },
+        pipelineGap: 20,
+        accounts: 12,
+        forecast: 250029,
+        bestcase: 230000,
+        riskscore: 55,
+        opporscore: 25,
+        id: 2,
+        relatedEmployees: [6, 7],
+        level: 1
+    },
+    {
+        name: "Gracie Ancelotti",
+        designation: "VP, MENA",
+        target: 200000,
+        percentGoalData: {
+            percent: 50.27,
+            booked: 100274
+        }, pipeline: {
+            net: 80000,
+            profit: "20k"
+        },
+        pipelineGap: 20,
+        accounts: 8,
+        forecast: 140029,
+        bestcase: 110000,
+        riskscore: 25,
+        opporscore: 75,
+        id: 2,
+        relatedEmployees: [6, 7],
+        level: 1
+    },
+]

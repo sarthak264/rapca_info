@@ -1,0 +1,40 @@
+@media only screen and (min-width: 31.25rem) {
+    .simpledropdown {
+        width: 80%;
+        display: flex;
+        flex-flow: column;
+        // align-items: center;
+        .defaultvalue {
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+        }
+        .optiondivsimple {
+            width: 90%;
+            .suboption {
+                margin-top: 0.2rem;
+                background: #ffffff;
+                border: 0.5px solid #d0d0d0;
+                box-sizing: border-box;
+                box-shadow: 6px 11px 24px rgba(0, 0, 0, 0.14),
+                    inset -4px -3px 4px rgba(0, 0, 0, 0.1);
+                border-radius: 6px;
+                position: absolute;
+                padding: 0.5rem;
+                .inditem {
+                    margin-top: 0.3rem;
+                    padding: 0.3rem 6rem 0.3rem 0.5rem;
+                    cursor: pointer;
+                    font-weight: 400;
+                    border-radius: 2px;
+                    transition: 0.3s;
+                    &:hover {
+                        background: #f5f4ff;
+                    }
+                }
+            }
+        }
+    }
+}

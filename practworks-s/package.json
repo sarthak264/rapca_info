@@ -1,0 +1,74 @@
+{
+  "name": "assignment",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-brands-svg-icons": "^5.15.3",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@fortawesome/react-fontawesome": "^0.1.14",
+    "@testing-library/jest-dom": "^5.11.10",
+    "@testing-library/react": "^11.2.6",
+    "@testing-library/user-event": "^12.8.3",
+    "ant-table-extensions": "^1.1.7",
+    "antd": "^4.15.1",
+    "axios": "^0.21.1",
+    "base64-img": "^1.0.4",
+    "better-react-mathjax": "^1.0.3",
+    "bootstrap": "^4.6.0",
+    "bootstrap-icons": "^1.7.2",
+    "firebase": "^8.4.3",
+    "image-to-base64": "^2.2.0",
+    "markerjs2": "^2.7.1",
+    "node": "^12.10.0",
+    "node-sass": "^5.0.0",
+    "pure-react-carousel": "^1.27.6",
+    "react": "^17.0.2",
+    "react-beautiful-dnd": "^13.1.0",
+    "react-burger-menu": "^3.0.6",
+    "react-canvas-draw": "^1.1.1",
+    "react-dom": "^17.0.2",
+    "react-fontawesome": "^1.7.1",
+    "react-otp-input": "^2.3.0",
+    "react-pdf": "^5.6.0",
+    "react-qr-code": "^2.0.3",
+    "react-rating-stars-component": "^2.2.0",
+    "react-redux": "^7.2.4",
+    "react-responsive": "^8.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-router-redux": "^4.0.8",
+    "react-scripts": "4.0.3",
+    "react-sketch": "^0.4.4",
+    "reactstrap": "^8.9.0",
+    "redux-persist": "^6.0.0",
+    "redux-thunk": "^2.3.0",
+    "styled-components": "^5.2.3",
+    "validator": "^13.7.0",
+    "video-react": "^0.14.1",
+    "web-vitals": "^1.1.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "GENERATE_SOURCEMAP=true react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

@@ -1,0 +1,124 @@
+def project_name = 'assignment-website'
+def deploy_path = "/srv/www/react/${project_name}"
+def production_branch = 'master'
+def development_branch = 'development'
+def agentName = 'assignment'
+def ip_address = '0.0.0.0'
+def user = "ubuntu"
+def image_name = project_name + "_" + env.BRANCH_NAME
+def project_url = "practworks.com"
+def nginx_path = "/home/ubuntu/docker-stack/nginx_conf/react"
+def service_path = "/home/ubuntu/website"
+if (env.BRANCH_NAME == "${development_branch}")
+{
+  agentName = 'jenkins_deploy_new'
+  ip_address = "stage.openxcell.dev"
+  user = "ubuntu"
+}
+if (env.BRANCH_NAME == "${production_branch}")
+{
+  deploy_path = "/usr/share/nginx/html"
+  agentName = 'assignment'
+  ip_address = "practworks.com"
+}
+
+pipeline {
+    agent {
+      label 'ec2-fleet'
+    }
+    options {
+        buildDiscarder(logRotator(numToKeepStr: "7"))
+    }
+    
+    stages {
+        stage("Build")
+        {
+        	agent {
+		        docker {
+		            image "node:12-alpine"
+                    label 'ec2-fleet'
+		        }
+		    }
+            steps
+            {   
+                sh "npm install"
+                sh "mv .env.${env.BRANCH_NAME} .env || ls -la"
+                sh "npm run --silent build"
+                stash includes: 'build/**/*', name: 'BUILD'
+                cleanWs()
+                    
+            }
+        }
+        stage("Build Docker")
+        {
+            when{
+                branch 'master'
+            }
+            options { skipDefaultCheckout() } 
+            steps
+            {   
+                unstash "BUILD"
+                sh "curl -sSLk https://gitlab.orderhive.plus/-/snippets/11/raw -o Dockerfile"
+                sh "docker build -t ${image_name} ."
+                sh "docker image save -o ${image_name}.tar ${image_name}"
+                stash includes: '*.tar', name: 'dockerImage'
+                cleanWs()
+                sh "docker rmi -f ${image_name}"
+                    
+            }
+        }
+        stage("Deploy")
+        {
+            options { skipDefaultCheckout() }
+            steps
+            {
+                script {
+                if (env.BRANCH_NAME == "${development_branch}")
+                    { 
+                    unstash 'BUILD'
+                    sshagent ( ["${agentName}"]) {
+                    sh 'ls -la build'
+                    sh """
+                    ssh -o StrictHostKeyChecking=no ${user}@${ip_address} "sudo mkdir -p ${deploy_path} || exit 0; sudo chown -R ${user}:${user} ${deploy_path}"
+                    """
+                    sh "rsync -avrHP -e 'ssh -o StrictHostKeyChecking=no' --delete build/ ${user}@${ip_address}:${deploy_path}"
+                                                         
+                    sh """
+                    ssh -o StrictHostKeyChecking=no ${user}@${ip_address} "curl -sSLk https://gitlab.orderhive.plus/-/snippets/2/raw | sed 's%__PROJECT_NAME__%${project_name}%g' > ${nginx_path}/${project_name}.conf"
+                    """
+                    sh """
+                    ssh -o StrictHostKeyChecking=no ${user}@${ip_address} "if docker exec web nginx -t;then docker exec web nginx -s reload;fi"
+                    """
+                    sh "docker system prune -f"
+                    }
+                }
+                if (env.BRANCH_NAME == "${production_branch}")
+                {
+                    unstash 'dockerImage'
+                    sshagent ( ["${agentName}"]) {
+                    sh "ssh -o StrictHostKeyChecking=no ${user}@${ip_address} docker rmi -f ${image_name} || exit 0"
+                            sh "rsync -azv -e 'ssh -o StrictHostKeyChecking=no' ${image_name}.tar ${user}@${ip_address}:~/"
+                            sh "ssh -o StrictHostKeyChecking=no ${user}@${ip_address} docker load -i ~/${image_name}.tar"
+                            sh "ssh -o StrictHostKeyChecking=no ${user}@${ip_address} mkdir -p ${service_path}"
+                            sh """
+                            ssh -o StrictHostKeyChecking=no ${user}@${ip_address} "curl -sSLk https://gitlab.orderhive.plus/-/snippets/12/raw | sed 's%__PROJECT_URL__%${project_url}%g;s%__PORT__%80%g;s%__PROJECT_NAME__%${project_name}%g;s%__IMAGE_NAME__%${image_name}%g' > ${service_path}/docker-compose.yml"
+                            """
+                            sh """
+                            ssh -o StrictHostKeyChecking=no ${user}@${ip_address} "cd ${service_path}; docker-compose up -d --force-recreate; rm -rf ~/*.tar"
+                            """
+                }
+                }
+                    
+                }
+
+            }
+        }
+    }
+    post { 
+        always { 
+            node('ec2-fleet') {
+                cleanWs()
+            }
+        }
+    }
+}

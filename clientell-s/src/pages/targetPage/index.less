@@ -1,0 +1,63 @@
+@media only screen and (min-width: 31.25rem) {
+    .targetpage {
+        padding-top: 2rem;
+        height: 100%;
+        // overflow-x: scroll;
+        overflow: hidden;
+        .searchdiv {
+            width: 55rem;
+            display: flex;
+            margin-left: 2rem;
+            justify-content: space-between;
+            align-items: center;
+            input {
+                width: 80%;
+                height: 2.4rem;
+                border: 0.921154px solid #bdbdbd;
+                box-sizing: border-box;
+                border-radius: 3.5rem;
+                padding: 0 1rem;
+            }
+            div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+            }
+        }
+        .header {
+            display: flex;
+            p {
+                border-radius: 3.68462px;
+                width: fit-content;
+                padding: 0.5rem;
+                margin-left: 1.4rem;
+                margin-top: 2rem;
+                cursor: pointer;
+            }
+            .selectedheader {
+                background: #f6f5fd;
+            }
+        }
+        .options {
+            p {
+                // background: #f6f5fd;
+                border-radius: 3.68462px;
+                width: fit-content;
+                padding: 0.5rem;
+                &:hover {
+                    background: #f6f5fd;
+                    cursor: pointer;
+                }
+            }
+            margin-left: 1.4rem;
+            margin-top: 0.8rem;
+            display: flex;
+            width: 100%;
+            display: flex;
+            // justify-content: space-between;
+            align-items: center;
+            gap: 0.8rem;
+        }
+    }
+}

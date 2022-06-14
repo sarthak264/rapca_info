@@ -1,0 +1,431 @@
+@media only screen and (min-width: 31.25rem) {
+    .dealcommit {
+        padding-top: 2rem;
+        height: 100%;
+        // overflow-x: scroll;
+        overflow: hidden;
+        .searchdiv {
+            width: 55rem;
+            display: flex;
+            margin-left: 2rem;
+            justify-content: space-between;
+            align-items: center;
+            input {
+                width: 80%;
+                height: 2.4rem;
+                border: 0.921154px solid #bdbdbd;
+                box-sizing: border-box;
+                border-radius: 3.5rem;
+                padding: 0 1rem;
+            }
+            div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+            }
+        }
+        .header {
+            p {
+                border-radius: 3.68462px;
+                width: fit-content;
+                padding: 0.5rem;
+                cursor: pointer;
+                margin-left: 1.4rem;
+                background-color: #f6f5fd;
+            }
+            margin-top: 2rem;
+            display: flex;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .forecastsubmit {
+                padding: 0.5rem;
+                width: fit-content;
+                cursor: pointer;
+                background: #998def;
+                border-radius: 0.9rem;
+                font-style: normal;
+                font-weight: 500;
+                color: #ffffff;
+                margin-right: 4rem;
+                border-color: #998def;
+                border: 1px #998def solid;
+                &:hover {
+                    background: #ffffff;
+                    color: #998def;
+                    transition-duration: 0.3s;
+                }
+            }
+        }
+        .filters {
+            display: flex;
+            background: #f3f3f3;
+            height: 3rem;
+            margin-top: 0.4rem;
+            align-items: center;
+            gap: 2rem;
+            padding-left: 3rem;
+            // justify-content: center;
+            // .selection {
+            //     margin-left: 5rem;
+            //     height: 60%;
+            //     width: fit-content;
+            // }
+            // & > * {
+            //     margin-left: 5rem;
+            // }
+        }
+        .tarperdisplay {
+            display: flex;
+            margin-left: 3rem;
+            margin-top: .5rem;
+            flex-wrap: wrap;
+
+            //origin target design
+            //.targetdisplay {
+            //    padding: 1rem;
+            //    width: 9.5rem;
+            //    background: linear-gradient(180deg, #cac3ff 0%, #a195f3 100%);
+            //    padding-right: 3rem;
+            //    border-radius: 11.0538px;
+            //    .headertarget {
+            //        color: #ffffff;
+            //        font-style: normal;
+            //        font-weight: normal;
+            //        font-size: 0.8rem;
+            //        line-height: 0.9rem;
+            //        color: #ffffff;
+            //    }
+            //    .targetdata {
+            //        margin-top: 0.3rem;
+            //        font-style: normal;
+            //        font-weight: 600;
+            //        font-size: 1.6rem;
+            //        line-height: 1.8rem;
+            //        color: #ffffff;
+            //    }
+            //}
+            .targetdisplay {
+              padding: 1.4rem;
+              width: 11rem;
+              background: linear-gradient(180deg, #cac3ff 0%, #a195f3 100%);
+              margin-right: 1rem;
+              border-radius: 11.0538px;
+              margin-top: .6rem;
+
+              .headertarget {
+                color: #ffffff;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 0.8rem;
+                    line-height: 0.9rem;
+                    color: #ffffff;
+                }
+
+                .targetdata {
+                    margin-top: 0.3rem;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 1.6rem;
+                    line-height: 1.8rem;
+                    color: #ffffff;
+                }
+            }
+            .commondisplay {
+                padding: 1rem;
+                width: max-content;
+                margin-left: 1.4rem;
+                border-radius: 11.0538px;
+                border: 0.921154px solid #bdbdbd;
+                padding-right: 3rem;
+
+                .commontarget {
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 0.8rem;
+                    line-height: 0.9rem;
+                    color: #65627a;
+                }
+                .commonDataDiv {
+                    display: flex;
+                    margin-top: 0.3rem;
+                    justify-content: space-between;
+                    .commondata {
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 1.6rem;
+                        line-height: 1.8rem;
+                        color: #0d0a23;
+                    }
+                    .commonprofitdata {
+                        // background: #fceae9;
+                        border-radius: 0.1rem;
+                        width: max-content;
+                        height: fit-content;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 0.9rem;
+                        line-height: 13px;
+                        color: #e5554d;
+                        padding: 0.2rem 0.3rem;
+                        margin-left: 0.4rem;
+                        white-space: nowrap;
+                    }
+                }
+            }
+        }
+
+        .tableinfo {
+            margin-top: 2rem;
+            margin-left: 2rem;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 1.2rem;
+            line-height: 22px;
+            color: #444647;
+        }
+        .datatable {
+            margin-top: 1.3rem;
+            width: 100%;
+            .tableheaders {
+                display: flex;
+                & > * {
+                    background: #f7f7f8;
+                    // border-right: 0.1px solid rgb(197, 197, 197);
+                    padding: 0.8em 0;
+                    display: flex;
+                    justify-content: center;
+                    font-weight: 600;
+                    align-items: center;
+                    width: 12vw;
+                    font-size: 0.8rem;
+                    overflow: hidden;
+                    cursor: pointer;
+                }
+            }
+
+            .individualdata {
+                display: flex;
+                margin-top: 1.5rem;
+                & > * {
+                    padding: 0.8em 0;
+                    display: flex;
+                    justify-content: center;
+                    font-weight: 600;
+                    align-items: center;
+                    width: 12vw;
+                    font-size: 0.8rem;
+                    overflow: hidden;
+                }
+                .dealname {
+                    font-style: normal;
+                    font-weight: 600;
+                    color: #604aff;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    display: inline-block;
+                    justify-content: flex-start;
+                    padding: 0.8rem 0.3rem;
+                    text-overflow: ellipsis;
+                }
+                .account {
+                    font-style: normal;
+                    font-weight: 600;
+                    color: #604aff;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    display: inline-block;
+                    justify-content: flex-start;
+                    padding: 0.8rem 0.3rem;
+                    text-overflow: ellipsis;
+                }
+                .user {
+                    font-style: normal;
+                    font-weight: 600;
+                    color: #604aff;
+                }
+                .engagementrisk {
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                    .factor {
+                        display: flex;
+                        background: #fcf3f3;
+                        border-radius: 4px;
+                        color: #f5483f;
+                        padding: 0.2rem 0.6rem;
+                        display: flex;
+                        // justify-content: space-between;
+                        // align-items: center;
+                        cursor: pointer;
+                        p {
+                            color: #f5483f;
+                        }
+                        .engagementrisk {
+                            position: absolute;
+                            margin-top: 3rem;
+                            // display: flex;
+                            flex-flow: column;
+                            color: #000000;
+                            background: #ffffff;
+                            border: 0.419087px solid #d0d0d0;
+                            box-sizing: border-box;
+                            box-shadow: 33px 14px 16px -6px rgba(0, 0, 0, 0.04),
+                                inset -6px -19px 6px rgba(0, 0, 0, 0.06);
+                            border-radius: 8.38174px;
+                            // padding: 2rem;
+                            .engagementheaders {
+                                display: flex;
+                                align-items: center;
+                                padding-top: 1rem;
+                                margin-bottom: 0.3rem;
+                                .totalrisks {
+                                    border: 0.838174px solid #444647;
+                                    box-sizing: border-box;
+                                    border-radius: 2.5rem;
+                                    padding: 0.3rem 0.4rem;
+                                }
+                                .highrisk {
+                                    span {
+                                        color: #ff1d1d;
+                                        font-weight: 800;
+                                    }
+                                }
+                                .lowrisk {
+                                    span {
+                                        color: #1ec86a;
+                                        font-weight: 800;
+                                    }
+                                }
+                            }
+                            .engagementmessagesdiv {
+                                display: flex;
+                                flex-flow: column;
+                                align-items: center;
+                                padding: 0 2rem;
+
+                                .message {
+                                    width: 90%;
+                                    // background: #dcfae8;
+                                    // border-left: #1ec86a 6.70539px solid;
+                                    border-radius: 5.02904px;
+                                    margin-top: 0.3rem;
+                                    padding: 0.4rem 0;
+                                    padding-left: 1rem;
+                                    font-weight: 400;
+                                }
+                            }
+                            .dealinsightpanel {
+                                position: relative;
+                                margin-bottom: 0;
+                                margin-left: 0;
+                                width: 100%;
+                                background: #ffffff;
+                                box-shadow: 0px -6.70539px 20.1162px -1.67635px
+                                    rgba(0, 0, 0, 0.06);
+                                border-radius: 0px 0px 8.38174px 8.38174px;
+                                height: 3rem;
+                                z-index: 10;
+                                p {
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    color: #2356df;
+                                    padding: 0.4rem 2rem;
+                                }
+                            }
+                            display: none;
+                        }
+                        &:hover {
+                            .engagementrisk {
+                                display: flex;
+                            }
+                        }
+                    }
+                    .textbox {
+                        width: 40%;
+                        p {
+                            font-style: normal;
+                            font-weight: 600;
+                            color: #7a8391;
+                            width: 100%;
+                        }
+                    }
+                }
+
+                .forecastrisk {
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                    .factor {
+                        display: flex;
+                        background: #fcf3f3;
+                        border-radius: 4px;
+                        color: #f5483f;
+                        padding: 0.2rem 0.6rem;
+                        display: flex;
+                        // justify-content: space-between;
+                        // align-items: center;
+                        cursor: pointer;
+                        p {
+                            color: #f5483f;
+                        }
+                    }
+                    .textbox {
+                        width: 40%;
+                        p {
+                            font-style: normal;
+                            font-weight: 600;
+                            color: #7a8391;
+                            width: 100%;
+                        }
+                    }
+                }
+                .dealamount {
+                    // background: ;
+                    // background: red;
+                    .editdealamountdiv {
+                        border: 1px solid #384fa3;
+                        box-sizing: border-box;
+                        border-radius: 47px;
+                        width: 60%;
+                        height: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        overflow: hidden;
+                        // text-align: right;
+                        .dollarlogo {
+                            background: #c8c9ce;
+                            opacity: 0.9;
+                            border-radius: 30px 0px 0px 30px;
+                            height: 100%;
+                            padding: 0 0.2rem 0 0.4rem;
+                            // padding: 0.4rem;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                        .dealamountvalue {
+                            padding: 0.3rem 0.3rem 0.3rem 0;
+                            display: flex;
+                            // justify-content: center;
+                            // align-items: center;
+                            // background: red;
+                            border: none;
+                            text-align: right;
+                            padding-right: 0.4rem;
+                            width: 100%;
+                            font-style: normal;
+                            font-weight: 600;
+                            color: #444647;
+                            &:focus {
+                                outline: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

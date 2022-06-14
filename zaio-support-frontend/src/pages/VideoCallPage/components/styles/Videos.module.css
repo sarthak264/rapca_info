@@ -1,0 +1,27 @@
+.main {
+  position: relative;
+}
+
+.screenShared {
+  position: absolute;
+  width: 100%;
+  min-width: 700px;
+  max-width: calc(100% - 300px);
+  height: calc(100% - 104px);
+  min-height: calc(100vh - 104px);
+  top: 50px;
+  left: 0;
+  border-radius: 50% !important;
+}
+
+.tutorVid {
+  right: 0;
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  top: 50px !important;
+}
+
+.vid {
+  background-color: black;
+}

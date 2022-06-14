@@ -1,0 +1,173 @@
+@media only screen and (min-width: 31.5rem) {
+    .dropdowncustom {
+        height: max-content;
+        width: max-content;
+
+        .droptitlediv {
+            background: #ffffff;
+            box-sizing: border-box;
+            border-radius: 23.95px;
+            padding: 0.4rem 1rem;
+            cursor: pointer;
+            font-style: normal;
+            font-weight: 600;
+            color: #000000;
+            .optionhighlight {
+                font-weight: 400;
+            }
+        }
+        .dropdowndiv {
+            background: #ffffff;
+            box-shadow: -3px 3px 6px rgba(0, 0, 0, 0.2);
+            border-radius: 0.5rem;
+            padding: 0.3rem 1rem;
+            position: relative;
+            width: fit-content;
+            top: 0;
+            right: 0;
+            .dropdownheader {
+                display: flex;
+                font-style: normal;
+                font-weight: 600;
+                color: #1b1b1b;
+                cursor: pointer;
+                p {
+                    font-style: normal;
+                    font-weight: 600;
+                    color: #000000;
+                }
+                .optionhighlight {
+                    font-weight: 400;
+                }
+            }
+            .dropdownhr {
+                margin-top: 0.3rem;
+            }
+            .dropdownoptions {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 0.9rem;
+                color: #1b1b1b;
+                cursor: pointer;
+                p {
+                    border-radius: 2px;
+                    margin-top: 0.4rem;
+                    padding-left: 0.4rem;
+                    padding: 0.3rem 0 0.3rem 0;
+                    padding-left: 0.5rem;
+                    &:hover {
+                        background: #f5f4ff;
+                    }
+                }
+                .customdatepicker {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .datepickerdropdown {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        width: 100%;
+                    }
+                    .datepickerdiv {
+                        // position: absolute;
+                        // top: 0;
+                        width: 0;
+                        .customdivdatepick {
+                            position: absolute;
+                            // top: 0;
+                            background: #ffffff;
+                            width: max-content;
+                            padding: 1rem;
+                            margin-left: 1.5rem;
+                            box-shadow: -6px 7px 34px rgba(0, 0, 0, 0.16);
+                            border-radius: 10px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-evenly;
+                            .datepicker {
+                                margin-left: 0.4rem;
+                            }
+                        }
+                    }
+                    // display: none;
+                }
+            }
+            .dropdownoptionsCustomCheckbox {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 0.9rem;
+                color: #1b1b1b;
+                .dropdownoptionsCustomCheckboxDiv {
+                    display: flex;
+                    justify-content: space-between;
+                    p {
+                        cursor: pointer;
+                        border-radius: 2px;
+                        margin-top: 0.4rem;
+                        padding: 0.3rem 0.4rem 0.3rem 0.4rem;
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        .inidioptioncheckboxdiv {
+                            display: flex;
+                            align-items: center;
+                            label {
+                                cursor: pointer;
+                            }
+                        }
+                        &:hover {
+                            background: rgba(118, 148, 165, 0.651);
+                        }
+                    }
+                    .subdropdowndiv {
+                        position: absolute;
+                        right: 0;
+                        width: 0;
+                        .subdropdown {
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 0.9rem;
+                            color: #1b1b1b;
+                            width: max-content;
+                            background: #ffffff;
+                            box-shadow: -3px 3px 6px rgba(0, 0, 0, 0.2);
+                            border-radius: 3px;
+                            .subdropdownCustomCheckboxDiv {
+                                display: flex;
+                                // justify-content: space-between;
+                                p {
+                                    cursor: pointer;
+                                    border-radius: 2px;
+                                    margin-top: 0.4rem;
+                                    padding: 0.3rem 0.4rem 0.3rem 0.4rem;
+                                    // width: 100%;
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    .inidioptioncheckboxdiv {
+                                        display: flex;
+                                        align-items: center;
+                                        label {
+                                            cursor: pointer;
+                                        }
+                                    }
+                                    &:hover {
+                                        background: rgba(118, 148, 165, 0.651);
+                                    }
+                                }
+                                .subdropdowndiv1 {
+                                    background: red;
+                                    width: 0;
+                                    position: absolute;
+                                    margin-left: 5rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

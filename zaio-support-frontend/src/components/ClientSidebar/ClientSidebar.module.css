@@ -1,0 +1,40 @@
+.sidebarmain {
+  max-width: 318px;
+}
+.navlink {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 21px;
+  /* identical to box height, or 87% */
+
+  letter-spacing: 0.625px;
+
+  color: #c4c4c4;
+  text-decoration: none;
+  margin-bottom: 48px;
+}
+.navlink_active {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 21px;
+  /* identical to box height, or 87% */
+
+  letter-spacing: 0.625px;
+
+  color: #0d1e3a;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #0d1e3a;
+}
+@media screen and (max-width: 991px) {
+  .sidebarmain {
+    max-width: 250px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .sidebarmain {
+    max-width: 200px;
+  }
+  .navlink {
+    margin-bottom: 30px;
+  }
+}

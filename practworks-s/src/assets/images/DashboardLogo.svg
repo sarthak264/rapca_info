@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="193.64" height="47" viewBox="0 0 193.64 47">
+    <defs>
+        <style>
+            .cls-1{fill:#fff}
+        </style>
+    </defs>
+    <g id="Group_55649" transform="translate(-457.946 -64)">
+        <g id="PW_logo" transform="translate(457.946 68.969)">
+            <path id="Path_13" d="M231.131 264.949l-2.562-3.305s-5.81 14.674-6.119 15.006.32-1.235.32-1.235l-1.292-.435-.583 1a.1.1 0 0 1-.16-.114l6.428-16.618V253.5l-3.626 3.477-2.642 6.645a6.3 6.3 0 0 0-2.219-.526 19.577 19.577 0 0 0-3.832.526L209.4 277a9.383 9.383 0 0 0 2.287.606 3.182 3.182 0 0 0 2.6-1.807l2.379-6.531 2.093-.034-2.31 6.108s-.835 2.848.7 3.443a3.656 3.656 0 0 0 3.477-.641s-.4 2.825 3.088 4.93a.42.42 0 0 0 .618-.206L231.2 265.6a.587.587 0 0 0-.069-.651zm-11.517.709c-.149 1.658-2.116 2.528-2.036 1.773a11.849 11.849 0 0 1 .984-2.528s1.2-.915 1.052.755z" class="cls-1" transform="translate(-209.4 -253.5)"/>
+            <path id="Path_14" d="M224.7 521.832s6.416-.778 7.446 3.248l-5.639 4.152z" class="cls-1" transform="translate(-222.95 -491.089)"/>
+        </g>
+        <text id="PractWorks" fill="#fff" font-family="Caveat" font-size="38px" font-weight="700" letter-spacing="0.02em" transform="translate(484.586 100)">
+            <tspan x="0" y="0">PractWorks</tspan>
+        </text>
+    </g>
+</svg>

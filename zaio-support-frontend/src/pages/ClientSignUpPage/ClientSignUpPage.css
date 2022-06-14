@@ -1,0 +1,33 @@
+.login-main {
+  background: #ffffff;
+  box-shadow: 0px 4px 21px rgba(0, 0, 0, 0.4);
+  border-radius: 1px;
+  width: 100%;
+  max-width: 770px;
+  height: auto;
+  margin: 80px auto;
+}
+
+.login-header {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 24px;
+  /* identical to box height, or 67% */
+
+  letter-spacing: 0.625px;
+
+  color: #0d1e3a;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.login-label {
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 100% */
+
+  letter-spacing: 0.625px;
+
+  color: #000000;
+}

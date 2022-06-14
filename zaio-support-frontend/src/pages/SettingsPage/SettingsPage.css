@@ -1,0 +1,31 @@
+.settings-page hr {
+  margin-bottom: 35px;
+}
+.setting,
+.current,
+.title {
+  font-size: 1.5rem;
+}
+.current {
+  color: #6f6f6f;
+  font-weight: 400;
+}
+.edit-container {
+  display: flex;
+  justify-content: flex-end;
+  color: #6e31f9;
+  font-size: 1.25rem;
+}
+.edit-container i {
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .settings-page hr {
+    margin-bottom: 20px;
+  }
+  .setting,
+  .current,
+  .title {
+    font-size: 1.25rem;
+  }
+}

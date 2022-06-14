@@ -1,0 +1,139 @@
+.manage-metrics {
+  padding: 39px 36px;
+  box-sizing: border-box;
+  & > h1 {
+    font-family: Urbanist;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+    /* identical to box height */
+
+    /* clientell text black */
+
+    color: #101012;
+  }
+
+  & > div {
+    & > .head-row {
+      margin-top: 20px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      h2 {
+        margin-top: 40px;
+        font-family: Urbanist;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        /* identical to box height */
+
+        /* Grey Text */
+
+        color: #444647;
+        margin-bottom: 10px;
+      }
+      .button {
+        padding: 10px;
+        background-color: #0d0a23;
+        color: white;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+      .button[disabled] {
+        border: 1px solid #999999;
+        background-color: #cccccc;
+        color: #666666;
+      }
+    }
+
+    .subHeading {
+      font-weight: 500;
+      font-size: 2rem;
+      padding-top: 1rem;
+    }
+    .grid {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 100px;
+      padding: 20px 100px 0 40px;
+      .subHeading {
+        padding-top: 0px;
+        padding-bottom: 30px;
+      }
+      .list-card {
+        padding: 20px;
+        border: 1px solid #cfcfcf;
+        border-radius: 12px;
+        height: 450px;
+        & > .list-wrapper {
+          padding-right: 10px;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          height: 100%;
+          overflow-y: scroll;
+          .list-item {
+            display: flex;
+            justify-content: space-between;
+            margin: 5px 0;
+            align-items: center;
+            padding: 3px;
+            border-radius: 5px;
+            max-width: 100%;
+            text-align: left;
+          }
+          .active {
+            background-color: #f1f1f1;
+          }
+        }
+      }
+      .first,
+      .second,
+      .third {
+        position: relative;
+        display: grid;
+        grid-template-rows: 30px auto 450px;
+        text-align: center;
+        .logo {
+          display: block;
+          margin: 0 auto;
+          width: 40px;
+          height: 25px;
+        }
+      }
+      .first::after {
+        position: absolute;
+        content: "+";
+        right: -50px;
+        top: 50%;
+        transform: translate(50%, 50%);
+        font-size: 1.5rem;
+        color: #b8b8b8;
+      }
+      .second::after {
+        position: absolute;
+        content: "=";
+        right: -50px;
+        top: 50%;
+        transform: translate(50%, 50%);
+        font-size: 1.5rem;
+        color: #b8b8b8;
+      }
+      .triangle-wrapper {
+        position: absolute;
+        right: -20px;
+        top: 50%;
+        transform: translateY(50%);
+        display: grid;
+        grid-template-rows: 15px;
+        row-gap: 2px;
+        .reversed {
+          transform: rotate(180deg) translateX(-1px);
+        }
+      }
+    }
+  }
+}

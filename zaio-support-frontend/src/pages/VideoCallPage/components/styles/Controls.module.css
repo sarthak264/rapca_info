@@ -1,0 +1,33 @@
+.controls {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  background: #212325;
+  display: flex;
+  padding: 15px 30px;
+  width: 100%;
+  margin: 10px auto 0 auto;
+}
+
+.controls p {
+  color: white;
+  cursor: pointer;
+  margin: 0 30px;
+}
+
+.cancelBtn {
+  background-color: #ce3c34;
+  padding: 0 0.7rem 0 0.7rem;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.cancelBtn:hover {
+  background-color: #e42217;
+}
+.cancelBtnText {
+  transform: translateY(-2px);
+}

@@ -1,0 +1,26 @@
+$colors: (
+  blue: #213861,
+  lightBlue: #658bb1,
+  white: #ffffff,
+);
+
+@each $key, $value in $colors {
+  .#{$key} {
+    background: $value;
+    background-color: $value !important;
+    border-color: $value !important;
+  }
+  .#{$key}--text {
+    color: $value !important;
+  }
+  .#{$key}-c-hover {
+    &:hover {
+      color: $value !important;
+    }
+  }
+  .#{$key}-b-hover {
+    &:hover {
+      background-color: $value !important;
+    }
+  }
+}

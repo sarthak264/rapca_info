@@ -1,0 +1,411 @@
+@mixin ele-font($name) {
+  font-family: $name !important;
+}
+
+@for $i from 0 through 1000 {
+  .border-radius-#{$i} {
+    border-radius: $i * 1px !important;
+  }
+
+  .fs-#{$i} {
+    font-size: $i * 1px !important;
+    &.light-text {
+      @include ele-font("muli-light");
+    }
+    &.regular-text {
+      @include ele-font("muli-regular");
+    }
+    &.medium-text {
+      @include ele-font("muli-medium");
+    }
+    &.demi-bold-text {
+      @include ele-font("muli-semi-bold");
+    }
+    &.bold-text {
+      @include ele-font("muli-bold");
+    }
+  }
+
+  .pa-#{$i} {
+    padding: $i * 1px !important;
+  }
+
+  .pr-#{$i} {
+    padding-right: $i * 1px !important;
+  }
+
+  .pl-#{$i} {
+    padding-left: $i * 1px !important;
+  }
+
+  .pt-#{$i} {
+    padding-top: $i * 1px !important;
+  }
+
+  .pb-#{$i} {
+    padding-bottom: $i * 1px !important;
+  }
+
+  .plr-#{$i} {
+    padding-left: $i * 1px !important;
+    padding-right: $i * 1px !important;
+  }
+  .prl-#{$i} {
+    padding-top: $i * 1px !important;
+    padding-bottom: $i * 1px !important;
+  }
+  .ptb-#{$i} {
+    padding-top: $i * 1px !important;
+    padding-bottom: $i * 1px !important;
+  }
+  .pbt-#{$i} {
+    padding-top: $i * 1px !important;
+    padding-bottom: $i * 1px !important;
+  }
+
+  .ma-#{$i} {
+    margin: $i * 1px !important;
+  }
+
+  .mr-#{$i} {
+    margin-right: $i * 1px !important;
+  }
+
+  .mt-#{$i} {
+    margin-top: $i * 1px !important;
+  }
+
+  .mb-#{$i} {
+    margin-bottom: $i * 1px !important;
+  }
+
+  .ml-#{$i} {
+    margin-left: $i * 1px !important;
+  }
+
+  .mlr-#{$i} {
+    margin-left: $i * 1px !important;
+    margin-right: $i * 1px !important;
+  }
+  .mrl-#{$i} {
+    margin-left: $i * 1px !important;
+    margin-right: $i * 1px !important;
+  }
+  .mtb-#{$i} {
+    margin-top: $i * 1px !important;
+    margin-bottom: $i * 1px !important;
+  }
+  .mbt-#{$i} {
+    margin-top: $i * 1px !important;
+    margin-bottom: $i * 1px !important;
+  }
+  .h-#{$i} {
+    height: $i * 1px !important;
+  }
+  .w-#{$i} {
+    width: $i * 1px !important;
+  }
+}
+
+.mlr-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.ml-auto {
+  margin-left: auto !important;
+}
+
+.m-auto {
+  margin: auto !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.pos-relative {
+  position: relative;
+}
+
+.pos-absolute {
+  position: absolute;
+}
+
+.headline {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 600;
+  letter-spacing: normal;
+}
+
+.pull-right {
+  float: right;
+}
+
+.pull-left {
+  float: left;
+}
+
+.border-none {
+  border: 0 !important;
+}
+
+.vert-middle {
+  vertical-align: middle;
+}
+
+.flex {
+  display: flex;
+  &.center {
+    align-items: center;
+  }
+}
+
+.flex-100 {
+  display: flex;
+  width: 100%;
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
+
+.flex-x {
+  display: flex;
+  flex-direction: row;
+  &.align-center {
+    align-items: center;
+  }
+  &.center {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.flex-y {
+  display: flex;
+  flex-direction: column;
+  &.center {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.flex-0 {
+  flex: 0;
+}
+
+.flex-1 {
+  flex: 1;
+  min-width: 0;
+  min-height: 0;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.full-height {
+  height: 100vh;
+}
+
+.fill-width {
+  width: 100% !important;
+}
+
+.fill-height {
+  height: 100% !important;
+}
+
+.overflow-auto {
+  overflow: auto;
+}
+
+.overflow-hide {
+  overflow: hidden;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.hover-underline {
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.with-transition {
+  transition: all 0.3s ease-in;
+}
+
+.hover-border {
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.align-base {
+  align-items: baseline;
+}
+
+.align-center {
+  align-items: center;
+}
+
+/* .text-justify {
+    text-align: justify;
+  } */
+
+@for $i from 0 through 100 {
+  .mlrp-#{$i} {
+    margin-left: $i * 1% !important;
+    margin-right: $i * 1% !important;
+  }
+
+  .mtbp-#{$i} {
+    margin-top: $i * 1% !important;
+    margin-bottom: $i * 1% !important;
+  }
+
+  .plrp-#{$i} {
+    padding-left: $i * 1% !important;
+    padding-right: $i * 1% !important;
+  }
+
+  .plp-#{$i} {
+    padding-left: $i * 1% !important;
+  }
+
+  .ptbp-#{$i} {
+    padding-top: $i * 1% !important;
+    padding-bottom: $i * 1% !important;
+  }
+
+  .pbp-#{$i} {
+    padding-bottom: $i * 1% !important;
+  }
+
+  .mtp-#{$i} {
+    margin-top: $i * 1% !important;
+  }
+  .mlp-#{$i} {
+    margin-left: $i * 1% !important;
+  }
+  .hp-#{$i} {
+    height: $i * 1%;
+  }
+  .wp-#{$i} {
+    width: $i * 1%;
+  }
+
+  .top-#{$i} {
+    top: $i * 1%;
+  }
+
+  .left-#{$i} {
+    left: $i * 1%;
+  }
+
+  .dark-blue {
+    color: #213861;
+  }
+  .light-blue {
+    color: #658bb1;
+  }
+  .ant-dropdown-placement-bottomCenter > .ant-dropdown-arrow,
+  .ant-dropdown-placement-bottomLeft > .ant-dropdown-arrow,
+  .ant-dropdown-placement-bottomRight > .ant-dropdown-arrow {
+    border-top-color: #213861 !important;
+    border-left-color: #213861 !important;
+  }
+  .ant-dropdown-menu {
+    background-color: #213861 !important;
+    border-radius: 6px !important;
+  }
+  .ant-dropdown-menu-item > a,
+  .ant-dropdown-menu-submenu-title > a {
+    font-family: "Montserrat-Medium" !important;
+    color: white !important;
+  }
+  .ant-dropdown-menu-item:hover,
+  .ant-dropdown-menu-submenu-title:hover {
+    background-color: transparent !important;
+  }
+  .ant-dropdown-menu-item-divider,
+  .ant-dropdown-menu-submenu-title-divider {
+    margin: 2px 12px !important;
+    background-color: lightslategray !important;
+  }
+
+  .ant-dropdown-menu-item > a,
+  .ant-dropdown-menu-submenu-title > a {
+    padding: 8px 40px 8px 12px !important;
+  }
+
+  .ant-modal-header {
+    border-radius: 10px 10px 0 0 !important;
+    background-color: #e8eaef !important;
+  }
+
+  .ant-modal-title {
+    font-family: "Montserrat-Bold" !important;
+    color: #213861 !important;
+    font-size: 20px !important;
+  }
+
+  .ant-modal-content {
+    border-radius: 10px !important;
+  }
+
+  .ant-select-item-option-content {
+    font-family: "Montserrat-Medium" !important ;
+  }
+
+  .ant-dropdown {
+    position: fixed !important;
+  }
+
+  .vw-100 {
+    width: 100vw;
+  }
+
+  .anticon {
+    vertical-align: 1px !important;
+  }
+
+  .markerjs2 {
+    font-size: 16px;
+    position: absolute;
+    top: 167px !important;
+    height: 500px !important;
+    left: 33% !important;
+    width: 390px;
+    z-index: 5;
+    overflow: scroll;
+  }
+
+  .markerjs2-collapse {
+    font-size: 16px;
+    position: absolute;
+    top: 167px !important;
+    height: 500px !important;
+    left: 16% !important;
+    width: 500px;
+    z-index: 5;
+    overflow: scroll;
+  }
+}

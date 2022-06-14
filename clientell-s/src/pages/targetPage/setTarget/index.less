@@ -1,0 +1,109 @@
+@media only screen and (min-width: 31.25rem) {
+    .settarget {
+        .table {
+            width: 100%;
+            margin-top: 3rem;
+            .headers {
+                display: flex;
+                width: 100%;
+                background: #f7f7f8;
+                height: 2.7rem;
+                div {
+                    width: 12.5%;
+                    border-right: 0.3px #d0d0d0 solid;
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 0.9rem;
+                    text-transform: uppercase;
+                    color: #65627a;
+                    p {
+                        font-size: 0.8rem;
+                    }
+                }
+
+                .targetlqheader {
+                    width: 20%;
+                    display: flex;
+                    justify-content: flex-start;
+                    text-align: left;
+                    p {
+                        margin-left: 1rem;
+                    }
+                    // padding-left: 1;
+                }
+            }
+            .tabledata {
+                display: flex;
+                width: 100%;
+                height: 4rem;
+                div {
+                    width: 12.5%;
+                    border-right: 0.3px #d0d0d0 solid;
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    p {
+                        font-size: 0.8rem;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 0.9rem;
+                        color: #444647;
+                    }
+                }
+                .designationdiv {
+                    display: flex;
+                    flex-direction: column;
+                    text-align: left;
+                    align-items: flex-start;
+                    & > * {
+                        margin-left: 20%;
+                    }
+                    .name {
+                        font-style: normal;
+                        font-weight: 600;
+                        color: #604aff;
+                    }
+                    .designation {
+                        font-style: normal;
+                        font-weight: normal;
+                        color: #65627a;
+                    }
+                }
+                .targetlqheader {
+                    width: 20%;
+                    display: flex;
+                    justify-content: space-between;
+                    p {
+                        padding-left: 1rem;
+                    }
+                    button {
+                        margin-right: 1rem;
+                        background: #3b3c9b;
+                        border-radius: 3px;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 0.9rem;
+                        color: #ffffff;
+                        padding: 0.4rem 1rem;
+                        border: none;
+                        &:hover {
+                            background-color: #ffffff;
+                            color: #3b3c9b;
+                            transition-duration: 0.3s;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,54 @@
+@media only screen and (min-width: 31.25rem) {
+    .sidebar {
+        position: fixed;
+        background: #101012;
+        height: 100vh;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 2.9rem;
+        z-index: 1000;
+
+        .clientelllogo {
+            background: white;
+            width: 100%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            // padding: 0.4rem;
+            padding: 0.4rem 0rem;
+        }
+        .iconpanel {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            gap: 8%;
+            padding-top: 4rem;
+            // justify-content: space-evenly;
+            .sidebar-item {
+                // background: #2a1e80;
+                border-radius: 11px;
+                width: 2.4rem;
+                height: 2.4rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                &:hover {
+                    background: #2a1e80;
+                    cursor: pointer;
+                    .logoitem {
+                        filter: invert(0%);
+                    }
+                }
+
+                .logoitem {
+                    filter: invert(40%);
+                }
+            }
+        }
+    }
+}

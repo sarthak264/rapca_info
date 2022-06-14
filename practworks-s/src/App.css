@@ -1,0 +1,132 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("./assets/font/Montserrat-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat-Light";
+  src: url("./assets/font/Montserrat-Light.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("./assets/font/Montserrat-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat-Medium";
+  src: url("./assets/font/Montserrat-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat-SemiBold";
+  src: url("./assets/font/Montserrat-SemiBold.ttf");
+}
+
+.Monts-Bold {
+  font-family: "Montserrat-Bold" !important;
+}
+
+.Monts-Light {
+  font-family: "Montserrat-Light" !important;
+}
+
+.Monts-Regular {
+  font-family: "Montserrat-Regular" !important;
+}
+
+.Monts-Medium {
+  font-family: "Montserrat-Medium" !important;
+}
+.Monts-SemiBold {
+  font-family: "Montserrat-SemiBold" !important;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.ant-dropdown-menu-item > a,
+.ant-dropdown-menu-submenu-title > a {
+  font-family: "Montserrat-Medium" !important;
+  color: white !important;
+  padding: 8px 40px 8px 12px !important;
+}
+
+.ant-layout-sider-children {
+  overflow-y: auto;
+  width: 100%;
+}
+
+.ant-layout-sider-children::-webkit-scrollbar {
+  background-color: transparent;
+}
+
+.ant-layout-sider-children::-webkit-scrollbar-thumb {
+  background-color: #557596;
+  border-radius: 10px;
+}
+
+.ant-table {
+  font-size: 15px !important;
+}
+
+.ant-table-thead > tr > th {
+  font-weight: bold !important;
+  font-family: "Montserrat-Medium" !important;
+  border-right: 1px solid #213861 !important;
+  border-bottom: 1px solid #213861 !important;
+  background-color: #658bb1 !important;
+  color: white !important;
+}
+
+.ant-table-tbody > tr > td {
+  font-family: "Montserrat-Medium" !important;
+  border-right: 1px solid #213861 !important;
+
+  border-bottom: 1px solid #213861 !important;
+}
+
+.ant-table.ant-table-bordered > .ant-table-container {
+  border-left: 1px solid #213861 !important;
+  border-top: 1px solid #213861 !important;
+}
+
+.ant-table-row:nth-child(odd) {
+  background-color: #ebe9f5 !important;
+}

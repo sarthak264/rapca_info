@@ -1,0 +1,83 @@
+@media only screen and (min-width: 31.25rem) {
+    .welcomescreen {
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #f2f2f2;
+        .welcome-div {
+            height: 50%;
+            width: 30rem;
+            background: #441fc7;
+            display: flex;
+            flex-flow: column;
+            justify-content: flex-end;
+            border-radius: 1.5rem;
+            .message-component {
+                height: 80%;
+                margin-top: 20px;
+                background: #ffffff;
+                border-radius: 0 0 1.5rem 1.5rem;
+                .sent-by {
+                    display: flex;
+                    // justify-content: center;
+                    align-items: center;
+                    padding: 2rem 0 1rem 2.5rem;
+                    gap: 1.6rem;
+                    img {
+                        border-radius: 50%;
+                        width: 3rem;
+                    }
+                    p {
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 0.9rem;
+                        line-height: 150%;
+                        color: #7a8391;
+                    }
+                }
+                .welcome-message {
+                    .message-header {
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 1.8rem;
+                        line-height: 130%;
+                        color: #444647;
+                        width: 70%;
+                        padding: 0.4rem 2rem 0.4rem 2rem;
+                    }
+                    .message-footer {
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 0.9rem;
+                        line-height: 150%;
+                        color: #444647;
+                        padding: 1rem 2rem 0.4rem 2rem;
+                    }
+                }
+                .letsgo-div {
+                    display: flex;
+                    justify-content: flex-end;
+                    padding: 3rem 2rem 0.4rem 2rem;
+                    .letsgo {
+                        background: #fe8127;
+                        border-radius: 4rem;
+                        padding: 0.8rem 1.3rem 0.8rem 1.3rem;
+                        color: #ffffff;
+                        border: none;
+                        display: flex;
+                        align-items: center;
+                        gap: 0.6rem;
+                        &:hover {
+                            transition-duration: 0.2s;
+                            background: #ffffff;
+                            color: #fe8127;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

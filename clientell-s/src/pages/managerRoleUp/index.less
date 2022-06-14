@@ -1,0 +1,487 @@
+@media only screen and (min-width: 31.25rem) {
+  .managerroleup {
+    padding-top: 2rem;
+    height: 100%;
+    // overflow-x: scroll;
+    overflow: hidden;
+
+    .searchdiv {
+      width: 55rem;
+      display: flex;
+      margin-left: 2rem;
+      justify-content: space-between;
+      align-items: center;
+
+      input {
+        width: 80%;
+        height: 2.4rem;
+        border: 0.921154px solid #bdbdbd;
+        box-sizing: border-box;
+        border-radius: 3.5rem;
+        padding: 0 1rem;
+      }
+
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+      }
+    }
+
+    .header {
+      div {
+        display: flex;
+
+        p {
+          border-radius: 3.68462px;
+          width: fit-content;
+          padding: 0.5rem;
+          cursor: pointer;
+          margin-left: 1.4rem;
+        }
+
+        .selectedheader {
+          background: #f6f5fd;
+        }
+      }
+
+      margin-top: 2rem;
+      display: flex;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .forecastsubmit {
+        padding: 0.5rem;
+        width: fit-content;
+        cursor: pointer;
+        background: #998def;
+        border-radius: 0.9rem;
+        font-style: normal;
+        font-weight: 500;
+        color: #ffffff;
+        margin-right: 4rem;
+        border-color: #998def;
+        border: 1px #998def solid;
+
+        &:hover {
+          background: #ffffff;
+          color: #998def;
+          transition-duration: 0.3s;
+        }
+      }
+    }
+
+    .filters {
+      display: flex;
+      background: #f3f3f3;
+      height: 3rem;
+      margin-top: 0.4rem;
+      align-items: center;
+      gap: 2rem;
+      padding-left: 3rem;
+
+      .resetselect {
+        box-sizing: border-box;
+        border-radius: 23.95px;
+        padding: 0.4rem 4rem;
+        cursor: pointer;
+        color: #604aff;
+      }
+    }
+
+    .taperdisplay {
+      display: flex;
+      margin-left: 3rem;
+      margin-top: .5rem;
+      flex-wrap: wrap;
+      //.targetdisplay {
+      //    padding: 1rem;
+      //    width: 9.5rem;
+      //    background: linear-gradient(180deg, #cac3ff 0%, #a195f3 100%);
+      //    border-radius: 11.0538px;
+      //    padding-right: 3rem;
+      //
+      //    .headertarget {
+      //        color: #ffffff;
+      //        font-style: normal;
+      //        font-weight: normal;
+      //        font-size: 0.8rem;
+      //        line-height: 0.9rem;
+      //        color: #ffffff;
+      //    }
+      //    .targetdata {
+      //        margin-top: 0.3rem;
+      //        font-style: normal;
+      //        font-weight: 600;
+      //        font-size: 1.6rem;
+      //        line-height: 1.8rem;
+      //        color: #ffffff;
+      //    }
+      //}
+
+      .targetdisplay {
+        padding: 1.4rem;
+        width: 11rem;
+        background: linear-gradient(180deg, #cac3ff 0%, #a195f3 100%);
+        margin-right: 1rem;
+        border-radius: 11.0538px;
+        margin-top: .6rem;
+
+        .headertarget {
+          color: #ffffff;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 0.8rem;
+          line-height: 0.9rem;
+          color: #ffffff;
+        }
+
+        .targetdata {
+          margin-top: 0.3rem;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 1.6rem;
+          line-height: 1.8rem;
+          color: #ffffff;
+        }
+      }
+
+      .commondisplay {
+        padding: 1rem;
+        width: max-content;
+        margin-left: 1.4rem;
+        border-radius: 11.0538px;
+        border: 0.921154px solid #bdbdbd;
+        padding-right: 3rem;
+
+        .commontarget {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 0.8rem;
+          line-height: 0.9rem;
+          color: #65627a;
+        }
+
+        .commonDataDiv {
+          display: flex;
+          margin-top: 0.3rem;
+          justify-content: space-between;
+
+          .commondata {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 1.6rem;
+            line-height: 1.8rem;
+            color: #0d0a23;
+          }
+
+          .commonprofitdata {
+            // background: #fceae9;
+            border-radius: 0.1rem;
+            width: max-content;
+            height: fit-content;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 0.9rem;
+            line-height: 13px;
+            color: #6f8f24d2;
+            padding: 0.2rem 0.3rem;
+            margin-left: 0.4rem;
+            white-space: nowrap;
+          }
+        }
+      }
+
+      .dealswon {
+        padding: 1rem;
+        width: 9.5rem;
+        margin-left: 1.4rem;
+        border-radius: 11.0538px;
+        border: 0.921154px solid #bdbdbd;
+        padding-right: 3rem;
+
+        .percenttarget {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 0.8rem;
+          line-height: 0.9rem;
+          color: #65627a;
+        }
+
+        .goaldataDiv {
+          margin-top: 0.3rem;
+
+          display: flex;
+          justify-content: space-between;
+
+          .goaldata {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 1.6rem;
+            line-height: 1.8rem;
+            color: #0d0a23;
+          }
+
+          .goalprofitdata {
+            background: #eafbf0;
+            border-radius: 0.1rem;
+            width: fit-content;
+            height: fit-content;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 0.9rem;
+            line-height: 13px;
+            color: #00c156;
+            padding: 0.2rem 0.3rem;
+          }
+        }
+      }
+
+      .bookeddisplay {
+        padding: 1rem;
+        width: 9.5rem;
+        margin-left: 1.4rem;
+        border-radius: 11.0538px;
+        border: 0.921154px solid #bdbdbd;
+        padding-right: 3rem;
+
+        .bookedtarget {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 0.8rem;
+          line-height: 0.9rem;
+          color: #65627a;
+        }
+
+        .bookeddatadiv {
+          display: flex;
+          justify-content: space-between;
+
+          .bookeddata {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 1.6rem;
+            line-height: 1.8rem;
+            color: #0d0a23;
+          }
+
+          .bookedprofitdata {
+            background: #fceae9;
+            border-radius: 0.1rem;
+            width: fit-content;
+            height: fit-content;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 0.9rem;
+            line-height: 13px;
+            color: #e5554d;
+            padding: 0.2rem 0.3rem;
+          }
+        }
+      }
+    }
+
+    .datatable {
+      margin-top: 1.3rem;
+      //width: 100%;
+      //overflow: scroll;
+      overflow: scroll;
+
+      .tableheaders {
+        display: flex;
+        //width: 100%;
+        & > * {
+          background: #f7f7f8;
+          border-right: 0.1px solid rgb(197, 197, 197);
+          font-size: 0.8rem;
+          padding: .7rem 0rem .7rem 0rem;
+          min-width: 9rem;
+          max-width: 9rem;
+          //overflow: hidden;
+          text-align: center;
+        }
+      }
+
+      .indivudualdataset {
+        display: flex;
+        list-style: none;
+
+        &::-webkit-details-marker {
+          display: none;
+        }
+
+        &:hover {
+          background: #f3f5ff;
+          transition: 0.3s;
+          cursor: pointer;
+        }
+
+        & > * {
+          // background: #f7f7f8;
+          border-right: 0.1px solid rgb(197, 197, 197);
+          padding: 0.8em 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 12vw;
+          font-size: 0.8rem;
+          overflow: hidden;
+          // background: red;
+        }
+
+        //.repheader {
+        //  display: flex;
+        //  align-items: center;
+        //  justify-content: space-evenly;
+        //
+        //  .arrowhead {
+        //    cursor: pointer;
+        //  }
+        //
+        //  .nameheader {
+        //    width: 70%;
+        //
+        //    .name {
+        //      font-style: normal;
+        //      font-weight: 600;
+        //      color: #604aff;
+        //    }
+        //
+        //    .designation {
+        //      font-style: normal;
+        //      font-weight: normal;
+        //      color: #65627a;
+        //    }
+        //  }
+        //}
+
+        .targetheader {
+          font-style: normal;
+          font-weight: 600;
+          color: #0d0a23;
+          min-width: 9rem;
+          max-width: 9rem;
+        }
+
+        .pergoalheader {
+          display: flex;
+          flex-flow: column;
+
+          .percentload {
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+            align-items: center;
+
+            .percentmeter {
+              width: 50%;
+              height: 0.3rem;
+              background: #e5eef3;
+
+              .percentcolor {
+                height: 100%;
+                // width: 50%;
+                background: #604aff;
+              }
+            }
+
+            .percentage {
+              font-style: normal;
+              font-weight: 600;
+              font-size: 0.89rem;
+              color: #0d0a23;
+            }
+          }
+
+          .bookeddata {
+            margin-top: 0.3rem;
+            font-style: normal;
+            font-weight: normal;
+            color: #65627a;
+            text-align: right;
+            width: 90%;
+          }
+        }
+
+        .pipelineheader {
+          display: flex;
+          flex-flow: column;
+
+          .maindata {
+            font-style: normal;
+            font-weight: 600;
+            color: #0d0a23;
+          }
+
+          .profitdata {
+            text-align: right;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 0.7rem;
+            color: #1ec86a;
+          }
+        }
+
+        .pipelinegapheader {
+          p {
+            font-style: normal;
+            font-weight: 600;
+            color: #f5483f;
+          }
+        }
+
+        .accountsheader {
+          p {
+            font-style: normal;
+            font-weight: 600;
+            text-align: center;
+            color: #0d0a23;
+          }
+        }
+
+        .forecastheader {
+          p {
+            font-style: normal;
+            font-weight: 600;
+            color: #0d0a23;
+          }
+        }
+
+        .bestcaseheader {
+          font-style: normal;
+          font-weight: 600;
+          color: #0d0a23;
+        }
+
+        .riskscoreheader {
+          p {
+            background: #fcf3f3;
+            border-radius: 3px;
+            width: 80%;
+            text-align: center;
+            padding: 0.4rem 0;
+            font-style: normal;
+            font-weight: 600;
+            color: #f5483f;
+          }
+        }
+
+        .opportunityscore {
+          p {
+            background: #d7fce4;
+            border-radius: 3px;
+            width: 80%;
+            text-align: center;
+            padding: 0.4rem 0;
+            font-style: normal;
+            font-weight: 600;
+            color: #1ec86a;
+          }
+        }
+      }
+    }
+  }
+}

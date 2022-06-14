@@ -1,0 +1,9 @@
+.app {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  min-width: 1000px;
+  overflow-x: auto;
+  background-color: black;
+}
+

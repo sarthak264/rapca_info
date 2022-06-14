@@ -1,0 +1,71 @@
+.manage-filters {
+  padding: 39px 36px;
+  & > h1 {
+    font-family: Urbanist;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+    /* identical to box height */
+
+    /* clientell text black */
+
+    color: #101012;
+  }
+  & > div {
+    & > .head-row {
+      margin-top: 20px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      & > h2 {
+        margin-top: 40px;
+        font-family: Urbanist;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        /* identical to box height */
+
+        /* Grey Text */
+
+        color: #444647;
+        margin-bottom: 10px;
+      }
+      .button {
+        padding: 10px;
+        background-color: #0d0a23;
+        color: white;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+      .button[disabled] {
+        border: 1px solid #999999;
+        background-color: #cccccc;
+        color: #666666;
+      }
+    }
+    & > .checkboxes {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      & > .checkbox {
+        margin-top: 15px;
+        width: 25%;
+        display: flex;
+        align-items: center;
+
+        & > p {
+          margin-left: 10px;
+          font-family: Urbanist;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 14px;
+
+          color: #000000;
+        }
+      }
+    }
+  }
+}

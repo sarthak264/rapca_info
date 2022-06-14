@@ -1,0 +1,208 @@
+@media only screen and (min-width: 31.25rem) {
+    .login {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        .loginform {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            // justify-content: center;
+            align-items: center;
+            flex-flow: column;
+            .logindisplay {
+                display: flex;
+                flex-flow: column;
+                align-items: center;
+                width: 36%;
+                height: 100%;
+                .loginlogo {
+                    margin-top: 5rem;
+                }
+                .loginformheader {
+                    margin-top: 3rem;
+                    p {
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 0.9rem;
+                        line-height: 1.1rem;
+                        color: #7a8391;
+                    }
+                    .header {
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 2rem;
+                        line-height: 2.4rem;
+                        color: #0d0a23;
+                    }
+                }
+                .loginform {
+                    width: 100%;
+                    margin: 3rem;
+                    .emailhandle {
+                        display: flex;
+                        flex-flow: column;
+                        width: 100%;
+                        label {
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 1.1rem;
+                            line-height: 1.4rem;
+                            color: #65627a;
+                        }
+                        input {
+                            width: 100%;
+                            border: 0.1rem solid #e0e0e0;
+                            box-sizing: border-box;
+                            border-radius: 0.4rem;
+                            padding: 0.3rem;
+                            font-size: 1.3rem;
+                        }
+                    }
+                    .passhandle {
+                        margin-top: 1rem;
+                        display: flex;
+                        flex-flow: column;
+                        width: 100%;
+                        label {
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 1.1rem;
+                            line-height: 1.4rem;
+                            color: #65627a;
+                        }
+                        input {
+                            width: 100%;
+                            border: 0.1rem solid #e0e0e0;
+                            box-sizing: border-box;
+                            border-radius: 0.4rem;
+                            padding: 0.3rem;
+                            font-size: 1.3rem;
+                        }
+                    }
+                    .remberForgetpass {
+                        margin-top: 1rem;
+                        display: flex;
+                        width: 100%;
+                        justify-content: space-between;
+                        .rememberme {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                        .forgetpass {
+                            p {
+                                font-style: normal;
+                                font-weight: normal;
+                                font-size: 1rem;
+                                line-height: 1.2rem;
+                                color: #0d0a23;
+                            }
+                        }
+                    }
+                    .loginbuttonDiv {
+                        width: 100%;
+                        margin-top: 1.9rem;
+                        button {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 100%;
+                            background: linear-gradient(
+                                88.64deg,
+                                #3b2568 28.63%,
+                                #553495 86.09%
+                            );
+                            border-radius: 0.4rem;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 1rem;
+                            line-height: 1.3rem;
+                            color: #ffffff;
+                            height: 2.3rem;
+                            cursor: pointer;
+                            transition: 0.4s;
+                            .loader {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+                            &:hover {
+                                background: #ffffff;
+                                color: #553495;
+                                transition: 0.4s;
+                            }
+                        }
+                    }
+                    .ordiv {
+                        margin-top: 2.4rem;
+                        display: flex;
+                        width: 100%;
+                        justify-content: space-evenly;
+                        align-items: center;
+                        .linediv {
+                            border: 0.1px solid #7a8391;
+                            width: 8rem;
+                            height: 0.001rem;
+                        }
+                    }
+                    .googlelogin {
+                        margin-top: 2.2rem;
+                        p {
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 1rem;
+                            line-height: 1.3rem;
+                            color: #1b1b1b;
+                        }
+                        border-radius: 0.4rem;
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-evenly;
+                        align-items: center;
+                        padding: 0.5rem;
+                        cursor: pointer;
+                        background: #ffffff;
+                    }
+                }
+            }
+        }
+        .logindesign {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            justify-content: center;
+            .pagedetails {
+                width: 80%;
+                .page {
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 3rem;
+                    line-height: 110%;
+                    color: #5c17b2;
+                }
+                .additionalinfo {
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 1rem;
+                    line-height: 150%;
+                    color: #7742ca;
+                }
+            }
+            .pageart {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img {
+                    width: 70%;
+                }
+            }
+        }
+    }
+}
+@import "reponsiveCSS/index.less";

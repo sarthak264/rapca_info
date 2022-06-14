@@ -1,0 +1,66 @@
+@media only screen and (min-width: 31.25rem) {
+  .settingspages {
+    position: absolute;
+    top: 0;
+    left: 2.9rem;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(208, 208, 208, 0.42);
+    z-index: 1000;
+
+    .settings-nav-bar {
+      background: #ffffff;
+      height: 100%;
+      width: 15rem;
+
+      .settingsheader {
+        padding: 1.5rem 3rem 1.5rem 1rem;
+        display: flex;
+        justify-content: flex-start;
+
+        div {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          gap: .3rem;
+        }
+
+        border-bottom: .1rem solid #D5D5D5;
+      }
+
+      .usersettings {
+        padding: 1rem;
+
+        .usersettingheader {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 1.2rem;
+          color: #444647;
+          padding: 0 0 1.2rem 0;
+        }
+
+        .suboption {
+          //background: red;
+          display: flex;
+          padding: .7rem 0 .7rem 1rem;
+          gap: .3em;
+
+          &:hover {
+            background: #abd0d2;
+            cursor: pointer;
+            color: #ffffff;
+            transition-duration: .2s;
+          }
+        }
+
+        .usersettingheaderadmin {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 1.2rem;
+          color: #444647;
+          padding: 2rem 0 1.2rem 0;
+        }
+      }
+    }
+  }
+}
